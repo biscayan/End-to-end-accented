@@ -25,7 +25,7 @@ def mfcc_extraction(folder):
 
         mfcc=mfcc.reshape(mfcc.shape[1],mfcc.shape[0])
 
-        print(filename,mfcc.shape)
+        #print(filename,mfcc.shape)
  
         mfcc_array=np.concatenate((mfcc_array,mfcc),axis=0)
 
@@ -66,10 +66,10 @@ def mfcc_extraction(folder):
 
 if __name__=='__main__':
     mfcc_extraction('C:/Users/HyeongJu/Desktop/End-to-end accented/exp dataset/Australia') #(2701901, 14)
-    #mfcc_extraction('C:/Users/HyeongJu/Desktop/End-to-end accented/exp dataset/Canada') 
-    #mfcc_extraction('C:/Users/HyeongJu/Desktop/End-to-end accented/exp dataset/England')
-    #mfcc_extraction('C:/Users/HyeongJu/Desktop/End-to-end accented/exp dataset/India') 
-    #mfcc_extraction('C:/Users/HyeongJu/Desktop/End-to-end accented/exp dataset/US') 
+    mfcc_extraction('C:/Users/HyeongJu/Desktop/End-to-end accented/exp dataset/Canada') #(2751667, 14)
+    mfcc_extraction('C:/Users/HyeongJu/Desktop/End-to-end accented/exp dataset/England') #(2586217, 14)
+    mfcc_extraction('C:/Users/HyeongJu/Desktop/End-to-end accented/exp dataset/India') #(2825064, 14)
+    mfcc_extraction('C:/Users/HyeongJu/Desktop/End-to-end accented/exp dataset/US') #(2392742, 14)
 
 
 
